@@ -1,0 +1,30 @@
+/* .row{
+    display: flex;
+    width: 1000px;
+}
+
+.col {
+    display: grid;
+    grid-template-areas: ;
+} */
+
+body{
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+.button-soma {
+    height: 50px;
+}
+
+.button-subtracao {
+    width: 40px;
+}
+
+.button-multiplicacao {
+    width: 40px;
+}
+
+.button-divisao {
+    width: 40px;
+}
