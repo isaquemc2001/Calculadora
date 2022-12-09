@@ -12,35 +12,52 @@
 
 <body>
     <div id="app">
-        
-        <div class="row">
-            <div class="col">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                
+        <div class="fundo">
+            <div>
+                <p class="titulo">Calculadora IMC</p>
             </div>
-            <div class="col">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-            </div>
-            <div class="col">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-            </div>
-            <div class="col">
-                <button class="button-divisao">/</button>
-                <button class="button-multiplicacao">*</button>
-                <button class="button-subtracao">-</button>
-            </div>
+
+            <table class="table">
+                <tr>
+                    <td class="td-display">
+                        <span class="display-num">20</span>
+                        <!-- <button class="button-delete">Delete</button> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="buttons-num">7</button>
+                        <button class="buttons-num">8</button>
+                        <button class="buttons-num">9</button>
+                        <button class="button-soma">+</button>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <button class="buttons-num">4</button>
+                        <button class="buttons-num">5</button>
+                        <button class="buttons-num">6</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="buttons-num">1</button>
+                        <button class="buttons-num">2</button>
+                        <button class="buttons-num">3</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="button-divisao">/</button>
+                        <button class="button-multiplicacao">*</button>
+                        <button class="button-subtracao">-</button>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <button class="button-soma">+</button>
     </div>
-    <div class="row">
-        
-    </div>
+
 </body>
 <script src="./methodsCalculadora.js"></script>
 
