@@ -20,31 +20,31 @@
             <table class="table">
                 <tr>
                     <td class="td-display">
-                        <span class="display-num">20</span>
-                        <!-- <button class="button-delete">Delete</button> -->
+                        <span class="display-num">{{ display-num }}</span>
+                        <button class="button-delete"><img class="img-delete" src="./delete.png"></button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button class="buttons-num">7</button>
-                        <button class="buttons-num">8</button>
-                        <button class="buttons-num">9</button>
+                        <button @click="button7" class="buttons-num">{{ n7 }}</button>
+                        <button class="buttons-num" value>{{ n8 }}</button>
+                        <button class="buttons-num">{{ n9 }}</button>
                         <button class="button-soma">+</button>
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <button class="buttons-num">4</button>
-                        <button class="buttons-num">5</button>
-                        <button class="buttons-num">6</button>
+                        <button class="buttons-num">{{ n4 }}</button>
+                        <button class="buttons-num">{{ n5 }}</button>
+                        <button class="buttons-num">{{ n6 }}</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button class="buttons-num">1</button>
-                        <button class="buttons-num">2</button>
-                        <button class="buttons-num">3</button>
+                        <button class="buttons-num">{{ n1 }}</button>
+                        <button class="buttons-num">{{ n2 }}</button>
+                        <button class="buttons-num">{{ n3 }}</button>
                     </td>
                 </tr>
                 <tr>
@@ -52,6 +52,7 @@
                         <button class="button-divisao">/</button>
                         <button class="button-multiplicacao">*</button>
                         <button class="button-subtracao">-</button>
+                        <button class="button-igual">=</button>
                     </td>
                 </tr>
             </table>

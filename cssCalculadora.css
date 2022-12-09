@@ -16,20 +16,40 @@ body {
   src: url('alarm-clock.ttf') format('truetype');
 }
 
-.display-num {
-  font-family: 'Alarm Clock';
-  font-size: 100px;
-  width: 362px;
-  height: 10px;
+.titulo {
+  color: rgb(135,206,250);
+  text-shadow: 
+  0 0 5px rgb(135,206,250),
+  0 0 50px rgb(135,206,250);
+  font-size: 50px;
+  font-family: 'Codec Cold';
 }
+
 
 .button-delete{
   display: inline-flex;
-  align-items: right;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: flex-end;
+  border: none;
+  background-color: rgb(135,206,250);
+}
+
+.img-delete{
+  width: 30px;
+}
+
+.display-num {
+font-family: 'Alarm Clock';
+  font-size: 100px;
+  width: 362px;
+  height: 10px;
+  margin-left: 10px;
 }
 
 .td-display{
-  display: absolute;
+  display: flex;
+  height: 100px;
   width: 368px;
   border-radius: 0.5rem !important;
   color: #fafafa;
@@ -62,10 +82,6 @@ body {
   border-color: #fafafa;
 }
 
-.titulo {
-  font-size: 50px;
-  font-family: 'Codec Cold';
-}
 
 .buttons-num {
   width: 100px;
@@ -92,10 +108,12 @@ body {
 .button-divisao,
 .button-multiplicacao,
 .button-subtracao {
-  width: 100px;
+  width: 89px;
   height: 100px;
   color: #fafafa;
   background-color: rgb(135,206,250);
+  font-family: 'Alarm Clock';
+  font-size: 30px;
 
   transition: 500ms;
 
@@ -109,14 +127,44 @@ body {
   6px 6px 80px rgba(0, 0, 0, 0.17);
 }
 
+.button-igual {
+  width: 89px;
+  height: 100px;
+  color: #fafafa;
+  background-color: rgb(213,131,0);
+  font-family: 'Alarm Clock';
+  font-size: 30px;
+
+  transition: 500ms;
+
+  border-radius: 0.5rem !important;
+  border: none;
+  box-shadow:
+  3.1px 3.1px 2.7px rgba(0, 0, 0, 0.133),
+  3.7px 3.7px 6.9px rgba(0, 0, 0, 0.139),
+  4.2px 4.2px 14.2px rgba(0, 0, 0, 0.145),
+  4.9px 4.9px 29.2px rgba(0, 0, 0, 0.155),
+  6px 6px 80px rgba(0, 0, 0, 0.17);
+}
+
+.button-igual:hover {
+  transform: translateY(-12px);
+  transition: 500ms;
+  color: #fafafa;
+  background-color: rgb(213,131,0);
+  border: 2px 1px;
+  border-color: #fafafa;
+}
+
 .button-soma {
   position: absolute;
-  z-index: 1;
-  height: 412px;
+  height: 310px;
   width: 50px;
   margin-left: 10px;
   color: #fafafa;
   background-color: rgb(135,206,250);
+  font-family: 'Alarm Clock';
+  font-size: 30px;
 
   transition: 500ms;
 
