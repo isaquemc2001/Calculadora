@@ -25,10 +25,9 @@ const vm = new Vue({
 
     },
     methods: {
-        digitos(e, num) {
-            if(e){
-                this.display = e.key
-            }
+        digitos(num) {
+            let numero = document.getElementById('resultado').innerHTML
+            this.display = document.getElementById('resultado').innerHTML = numero + num
         },
 
         limpar(){
