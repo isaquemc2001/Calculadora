@@ -10,7 +10,7 @@
     <title>Calculadora</title>
 </head>
 
-<body>
+<body @keyup="digitos($event)">
     <div id="app">
         <div class="fundo">
             <div>
@@ -20,39 +20,39 @@
             <table class="table">
                 <tr>
                     <td class="td-display">
-                        <span class="display-num">{{ display-num }}</span>
-                        <button class="button-delete"><img class="img-delete" src="./delete.png"></button>
+                        <div id="display" class="display-num">{{ display }}</div>
+                        <button @click="limpar()" class="button-delete"><img class="img-delete" src="./delete.png"></button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button @click="button7" class="buttons-num">{{ n7 }}</button>
-                        <button class="buttons-num" value>{{ n8 }}</button>
-                        <button class="buttons-num">{{ n9 }}</button>
-                        <button class="button-soma">+</button>
+                        <button @click="digitos(7)" class="buttons-num">{{ n7 }}</button>
+                        <button @click="digitos(8)" class="buttons-num" value>{{ n8 }}</button>
+                        <button @click="digitos(9)" class="buttons-num">{{ n9 }}</button>
+                        <button @click="soma()" class="button-soma">+</button>
                     </td>
 
                 </tr>
                 <tr>
                     <td>
-                        <button class="buttons-num">{{ n4 }}</button>
-                        <button class="buttons-num">{{ n5 }}</button>
-                        <button class="buttons-num">{{ n6 }}</button>
+                        <button @click="digitos(4)" class="buttons-num">{{ n4 }}</button>
+                        <button @click="digitos(5)" class="buttons-num">{{ n5 }}</button>
+                        <button @click="digitos(6)" class="buttons-num">{{ n6 }}</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button class="buttons-num">{{ n1 }}</button>
-                        <button class="buttons-num">{{ n2 }}</button>
-                        <button class="buttons-num">{{ n3 }}</button>
+                        <button @click="digitos(1)" class="buttons-num">{{ n1 }}</button>
+                        <button @click="digitos(2)" class="buttons-num">{{ n2 }}</button>
+                        <button @click="digitos(3)" class="buttons-num">{{ n3 }}</button>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <button class="button-divisao">/</button>
-                        <button class="button-multiplicacao">*</button>
-                        <button class="button-subtracao">-</button>
-                        <button class="button-igual">=</button>
+                        <button @click="digitos('/')" class="button-divisao">/</button>
+                        <button @click="digitos('*')" class="button-multiplicacao">*</button>
+                        <button @click="digitos('-')" class="button-subtracao">-</button>
+                        <button @click="digitos('=')" class="button-igual">=</button>
                     </td>
                 </tr>
             </table>

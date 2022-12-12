@@ -12,6 +12,10 @@ const vm = new Vue({
         n8: 8,
         n9: 9,
 
+        display: 0,
+
+        key: '',
+        
         // operadores
         adicao: "+",
         subtracao: "-",
@@ -21,8 +25,15 @@ const vm = new Vue({
 
     },
     methods: {
-        soma(){
-            this.n1
+        digitos(e, num) {
+            if(e){
+                this.display = e.key
+            }
+        },
+
+        limpar(){
+            this.display = 0
         }
+        
     }
 })
